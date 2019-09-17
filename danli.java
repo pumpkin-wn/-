@@ -1,8 +1,15 @@
 class Single{
-    //×Ô¼º´´½¨Ò»¸ö¶ÔÏó
+    //è‡ªå·±åˆ›å»ºä¸€ä¸ªå¯¹è±¡
       private static Single INSTANCE=new Single();
-      private SIngle(){}                                            //Ë½ÓĞ»¯¹¹Ôì·½·¨
-      public static Single getInstance(){                 //Ìá¹©·µ»Ø¸Ã¶ÔÏóµÄ¾²Ì¬·½·¨
+      private SIngle(){}                                            //ç§æœ‰åŒ–æ„é€ æ–¹æ³•
+      public static Single getInstance(){                 //æä¾›è¿”å›è¯¥å¯¹è±¡çš„é™æ€æ–¹æ³•
                 return INSTANCE;
       }
+}
+class Example{
+    public static void main(String[] args){
+    Single s1=Single.getInstance();
+    Single s2=Single.getInstance();
+   System.out.println(s1==s2);
+  }
 }
